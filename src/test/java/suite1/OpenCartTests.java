@@ -63,6 +63,7 @@ public class OpenCartTests {
 	public void beforeTest() {
 
 		//Instantiate browser based on user input
+		System.setProperty("webdriver.chrome.driver", "src/test/java/chromedriver.exe");
 
 		if(browser != "" && browser != null) {
 			if(browser.equalsIgnoreCase("Chrome")) {
